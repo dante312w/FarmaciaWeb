@@ -88,7 +88,7 @@ export default function HomePage() {
     );
   }
 
-  const { Hero, CategoryCard, ProductCard } = getThemeComponents(theme);
+  const { Hero, CategoryCard, ProductCarousel } = getThemeComponents(theme);
 
   return (
     <SiteChrome>
@@ -114,7 +114,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="promociones" className="bg-slate-50 py-14">
+      <section id="promociones" className="py-14">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="mb-8 flex items-end justify-between">
             <div>
@@ -127,12 +127,8 @@ export default function HomePage() {
               Ver catálogo completo
             </Link>
           </div>
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
-            {featured.map((p) => (
-              <ProductCard key={p.id} product={p} />
-            ))}
-          </div>
         </div>
+        <ProductCarousel products={featured} />
       </section>
 
       <section className="mx-auto max-w-3xl px-4 py-14 text-center sm:px-6">
