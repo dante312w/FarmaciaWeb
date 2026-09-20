@@ -126,3 +126,5 @@ demostración" en la parte superior).
 
 Todos los datos de productos, categorías y pedidos son ficticios y están
 claramente marcados como material de demostración.
+
+# FarmaciaWeb
