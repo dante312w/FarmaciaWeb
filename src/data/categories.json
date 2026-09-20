@@ -1,0 +1,44 @@
+[
+  {
+    "id": "cat-1",
+    "name": "Medicamentos de venta libre",
+    "slug": "medicamentos-venta-libre",
+    "description": "Analgésicos, antigripales y más, de venta sin fórmula",
+    "icon": "Pill"
+  },
+  {
+    "id": "cat-2",
+    "name": "Cuidado personal",
+    "slug": "cuidado-personal",
+    "description": "Productos para el cuidado diario del cuerpo",
+    "icon": "Sparkles"
+  },
+  {
+    "id": "cat-3",
+    "name": "Vitaminas",
+    "slug": "vitaminas",
+    "description": "Suplementos y vitaminas para tu bienestar",
+    "icon": "Leaf"
+  },
+  {
+    "id": "cat-4",
+    "name": "Higiene",
+    "slug": "higiene",
+    "description": "Productos de higiene personal y del hogar",
+    "icon": "Droplets"
+  },
+  {
+    "id": "cat-5",
+    "name": "Cuidado infantil",
+    "slug": "cuidado-infantil",
+    "description": "Todo lo necesario para el cuidado de los más pequeños",
+    "icon": "Baby"
+  },
+  {
+    "id": "cat-6",
+    "name": "Primeros auxilios",
+    "slug": "primeros-auxilios",
+    "description": "Insumos para emergencias y curaciones básicas",
+    "icon": "Cross"
+  }
+]
