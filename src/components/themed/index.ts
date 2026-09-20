@@ -60,5 +60,5 @@ const REGISTRY: Record<Theme, ThemeComponents> = {
 };
 
 export function getThemeComponents(theme: Theme): ThemeComponents {
-  return REGISTRY[theme];
+  return REGISTRY[theme] ?? REGISTRY["salud-moderna"];
 }
