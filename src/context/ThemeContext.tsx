@@ -18,6 +18,10 @@ interface ThemeContextValue {
 
 const DEFAULT_THEME: Theme = "salud-moderna";
 
+function isTheme(value: string | null): value is Theme {
+  return value === "salud-moderna" || value === "farmacia-cercana" || value === "pharma-premium";
+}
+
 const ThemeContext = createContext<ThemeContextValue>({
   theme: DEFAULT_THEME,
   setTheme: () => {},
@@ -30,8 +34,8 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     initStorage();
-    const stored = getStoredTheme() as Theme | null;
-    if (stored) setThemeState(stored);
+    const stored = getStoredTheme();
+    if (isTheme(stored)) setThemeState(stored);
     setReady(true);
   }, []);
 
